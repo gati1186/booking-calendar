@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Learning Sass</title>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/theme.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+    	<div class="row">
+			<h1 class="text-center"> Booking Calender application </h1>
+			<div class="text-center">
+				<button class="text-center booking_button"> Book my trial </button>
+				<!--booking form start -->
+		
+					<section>
+			        <div class="wizard">
+			            <div class="wizard-inner">
+			                <div class="connecting-line"></div>
+			                <ul class="nav nav-tabs" role="tablist">
+
+			                    <li role="presentation" class="active">
+			                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+			                            <span class="round-tab">
+			                                select date
+			                            </span>
+			                        </a>
+			                    </li>
+
+			                    <li role="presentation" class="disabled">
+			                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+			                            <span class="round-tab">
+			                               select time
+			                            </span>
+			                        </a>
+			                    </li>
+			                    <li role="presentation" class="disabled">
+			                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+			                            <span class="round-tab">
+			                                Enter your information
+			                            </span>
+			                        </a>
+			                    </li>
+
+			                    <li role="presentation" class="disabled">
+			                        <a href="#step4" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+			                            <span class="round-tab">
+			                                Select your wedding date
+			                            </span>
+			                        </a>
+			                    </li>
+			                    <li role="presentation" class="disabled">
+			                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+			                            <span class="round-tab">
+			                                Thank you
+			                            </span>
+			                        </a>
+			                    </li>
+
+     			                </ul>
+			            </div>
+
+			            <form role="form">
+			                <div class="tab-content">
+			                    <div class="tab-pane active" role="tabpanel" id="step1">
+			                        <h3>Please select only Sunday as we provide service only on Sunday</h3>
+			                        <div class="text-center">
+			                        	<input type="date" id="date_selection">
+			                        </div>
+			                        <ul class="list-inline text-right">
+			                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+			                        </ul>
+			                    </div>
+			                    <div class="tab-pane" role="tabpanel" id="step2">
+			                        <h3>Select your preferable time</h3>
+			                        <div class="btn-group">
+										  <button type="button" class="btn btn-primary">9.00AM to 9.30AM</button>
+										  <button type="button" class="btn btn-primary">9.30AM to 10.00AM</button>
+										  <button type="button" class="btn btn-primary">10.00AM to 10.30AM</button>
+										  <button type="button" class="btn btn-primary">10.30AM to 11.00AM</button>
+									</div>
+			                        <ul class="list-inline text-right">
+			                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+			                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+			                        </ul>
+			                    </div>
+			                    <div class="tab-pane" role="tabpanel" id="step3">
+			                        <h3>Please provide us some information about you</h3>
+			                        <div class="text-center">
+			                        	<input type="text" name="FirstName" value="name" required> <br/>
+			                        	<input type="email" name="YourEmail" value="email" required><br/>
+			                        	<input type="phone" name="YourNumber" vaule="numner" required><br/>
+			                        	<input type="textarea" maxlength="50" value="Additional Information" name=""additionalInfo>
+			                        </div>
+			                        <ul class="list-inline text-right">
+			                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+			                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+			                        </ul>
+			                    </div>
+			                    <div class="tab-pane" role="tabpanel" id="step4">
+			                        <h3>Step 4</h3>
+			                        <p>This is step 3</p>
+			                        <ul class="list-inline text-right">
+			                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+			                            
+			                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+			                        </ul>
+			                    </div>
+			                    <div class="tab-pane" role="tabpanel" id="complete">
+			                        <h3>Complete</h3>
+			                        <p>You have successfully completed all steps.</p>
+			                    </div>
+			                    <div class="clearfix"></div>
+			                </div>
+			            </form>
+				        </div>
+				    </section>
+		
+			</div>
+
+		</div>
+	</div>
+  
+</body>
+</html>
